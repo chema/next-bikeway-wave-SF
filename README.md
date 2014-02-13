@@ -1,4 +1,6 @@
-next-bikeway-wave-SF
-====================
+San Francisco's Next Wave of Bikeways
+=====================================
 
-Feeback visualization of San Francisco's next wave of bikeways
+Feeback visualization of San Francisco's next wave of bikeways based on input from members.
+
+Further details and survey [http://www.sfbike.org/main/survey-what-should-be-the-next-generation-of-bikeways-in-san-francisco/](located here).
