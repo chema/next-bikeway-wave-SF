@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans:b|Open+Sans:i);
+
+html {
+  min-width: 780;
+}
+
+body {
+  background: #fcfcfa;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  margin: 1em auto 4em auto;
+  position: relative;
+  width: 700px;
+}
+
+header,
+footer,
+aside,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000;
+}
+
+header,
+footer {
+  color: #636363;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  margin: .3em 0 .1em 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+}
+
+h2 a[name],
+h2 a[id] {
+  color: #ccc;
+  left: -20px;
+  position: absolute;
+  width: 400px;
+}
+
+body > p, li > p {
+  line-height: 1.5em;
+}
+
+body > p {
+  width: 500px;
+}
+
+blockquote q {
+  display: block;
+  font-style: oblique;
+}
+
+li {
+  width: 400px;
+}
+
+a {
+  color: steelblue;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+pre, code, textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+code {
+  line-height: 1em;
+}
+
+textarea {
+  font-size: 100%;
+}
+
+body > pre {
+  border-left: solid 2px #ccc;
+  padding-left: 18px;
+  margin: 2em 0 2em -20px;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+blockquote:before {
+  position: absolute;
+  left: 2em;
+}
+
+blockquote:after {
+  position: absolute;
+}

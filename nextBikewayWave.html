@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+<html>
 <meta charset="utf-8">
+<title>SF's Next Wave of Bikeways</title>
 <style>
+
+@import url(style.css);
 
 rect {
   fill: none;
   pointer-events: all;
+  stroke: black;
+  stroke-width: .5px;
 }
 
 .feature {
@@ -41,24 +47,31 @@ rect {
 }
 
 text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 10px;
   pointer-events: none;
 }
 
 </style>
 <body>
+
+<h1>San Francisco's Next Wave of Bikeways</h1>
+
+<p>Feedback visualization of San Francisco's next wave of bikeways based on member input.
+
+<p>Further details and survey <a href="http://www.sfbike.org/main/survey-what-should-be-the-next-generation-of-bikeways-in-san-francisco/"> located here</a>.
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script>
 
-var width = window.innerWidth-20,
-	height = window.innerHeight-20,
+var width = Math.max(500, window.innerWidth/3),
+	height = Math.max(500, window.innerHeight/2),
     active;
 
 var projection = d3.geo.mercator()
     .center([-122.406968,37.776873])
-    .scale(.60*(1 << 21) / 2 / Math.PI)
+    .scale(.80*(1 << 20) / 2 / Math.PI)
     .translate([width / 2, height / 2]);
 
 var path = d3.geo.path()
@@ -140,6 +153,8 @@ function reset() {
   g.transition().duration(1000).attr("transform", "");
 }
 
-
-
 </script>
+
+<p><a href="http://www.sfbike.org/">Join the SF Bicycle Coalition</a> and support better bikeways.
+
+</body>
