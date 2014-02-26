@@ -9,8 +9,6 @@
 rect {
   fill: none;
   pointer-events: all;
-  stroke: black;
-  stroke-width: .5px;
 }
 
 .feature {
@@ -20,12 +18,12 @@ rect {
 }
 
 .feature.active {
-  fill: orange;
+  fill: #FFD280;
 }
 
 .mesh {
   fill: none;
-  stroke: red;
+  stroke: dimgray;
   stroke-width: .7px;
   stroke-linejoin: round;
   stroke-dasharray: 1,2;
@@ -43,8 +41,84 @@ rect {
   stroke-width: .5px;
   stroke-linecap: round;
   stroke-linejoin: round;
-	visibility:visible;
+  visibility:visible;
+	stroke-opacity:0.5;
 }
+
+.NEWFELLST {stroke-width: 6px;}
+.NEWFOLSOMST {stroke-width: 4.9px;}
+.NEWKEARNYST {stroke-width: 4.7px;}
+.NEW15THST {stroke-width: 4.5px;}
+.NEWBRANNANST {stroke-width: 4.3px;}
+.NEW13THST {stroke-width: 4.2px;}
+.NEWTURKST {stroke-width: 4px;}
+.NEWSHOTWELLST {stroke-width: 3.9px;}
+.NEWLINCOLNWAY {stroke-width: 3.8px;}
+.NEWCALIFORNIAST {stroke-width: 3.5px;}
+.NEWEDDYST {stroke-width: 3.4px;}
+.NEWANZAST {stroke-width: 3px;}
+.NEW26THST {stroke-width: 2.7px;}
+.NEWANZAST {stroke-width: 2.6px;}
+.NEWBROTHERHOODWAY {stroke-width: 2.2px;}
+.NEWWASHINGTONST {stroke-width: 2px;}
+.NEWPERSIAAVE {stroke-width: 1.8px;}
+.NEWORTEGAST {stroke-width: 1.6px;}
+
+.UPGRADEDMARKETST {stroke-width: 6px;}
+.UPGRADEDPOLKST {stroke-width: 4.5px;}
+.UPGRADEDFOLSOMST {stroke-width: 4.3px;}
+.UPGRADED7THST {stroke-width: 4.1px;}
+.UPGRADED2NDST {stroke-width: 4.1px;}
+.UPGRADEDHOWARDST {stroke-width: 3.8px;}
+.UPGRADEDMASONICBLVD {stroke-width: 3.8px;}
+.UPGRADED5THST {stroke-width: 3.7px;}
+.UPGRADEDEMBARCADERO {stroke-width: 3.6px;}
+.UPGRADED17THST {stroke-width: 3.6px;}
+.UPGRADEDPAGEST {stroke-width: 3.5px;}
+.UPGRADEDSANCHEZST {stroke-width: 2.9px;}
+.UPGRADEDDIVISIONST {stroke-width: 2.9px;}
+.UPGRADEDPOSTST {stroke-width: 2.8px;}
+.UPGRADEDCOLUMBUSAVE {stroke-width: 2.8px;}
+.UPGRADEDPOTREROAVE {stroke-width: 2.7px;}
+.UPGRADEDSUTTERST {stroke-width: 2.7px;}
+.UPGRADEDGREATHWY {stroke-width: 2.7px;}
+.UPGRADED11THST {stroke-width: 2.6px;}
+.UPGRADEDCESAR {stroke-width: 2.5px;}
+.UPGRADEDSLOATBLVD {stroke-width: 2.4px;}
+.UPGRADEDSANSOMEST {stroke-width: 2.4px;}
+.UPGRADEDBROADWAYnull {stroke-width: 2.4px;}
+.UPGRADEDGROVEST {stroke-width: 2.3px;}
+.UPGRADED {stroke-width: 2.2px;}
+.UPGRADED3RDST {stroke-width: 2.2px;}
+.UPGRADEDBAY {stroke-width: 2.2px;}
+.UPGRADEDOCEANAVE {stroke-width: 2.2px;}
+.UPGRADEDLARKINST {stroke-width: 2px;}
+.UPGRADEDGOLDENGATEAVE {stroke-width: 2px;}
+.UPGRADEDCALIFORNIAST {stroke-width: 1.9px;}
+.UPGRADED22NDST {stroke-width: 1.8px;}
+.UPGRADEDPORTOLADR {stroke-width: 1.8px;}
+.UPGRADEDPAULAVE {stroke-width: 1.8px;}
+.UPGRADEDSILVERAVE {stroke-width: 1.7px;}
+.UPGRADEDMARIPOSAST {stroke-width: 1.7px;}
+.UPGRADEDBATTERYST {stroke-width: 1.7px;}
+.UPGRADEDPRESIDIOAVE {stroke-width: 1.6px;}
+.UPGRADEDFREMONTST {stroke-width: 1.6px;}
+.UPGRADED8THAVE {stroke-width: 1.5px;}
+.UPGRADED23RDAVE {stroke-width: 1.5px;}
+.UPGRADED20THAVE {stroke-width: 1.5px;}
+.UPGRADEDSTEINERST {stroke-width: 1.4px;}
+.UPGRADED15THAVE {stroke-width: 1.2px;}
+.UPGRADEDINDIANAST {stroke-width: 1.2px;}
+.UPGRADEDHUGOST {stroke-width: 1.2px;}
+.UPGRADEDHOLLOWAYAVE {stroke-width: 1.2px;}
+.UPGRADEDOSHAUGHNESSYBLVD {stroke-width: 1.1px;}
+.UPGRADED34THAVE {stroke-width: 1.1px;}
+.UPGRADEDPHELPSST {stroke-width: 1px;}
+.UPGRADEDGREENWICHST {stroke-width: 0.9px;}
+.UPGRADEDCHATTAGNOOGAST {stroke-width: 0.9px;}
+.UPGRADEDHEARSTAVE {stroke-width: 0.8px;}
+.UPGRADED {stroke-width: 0.7px;}
+.UPGRADEDALEMANYBLVD {stroke-width: 0.5px;}
 
 text {
   font-family: "Open Sans", sans-serif;
@@ -57,16 +131,14 @@ text {
 
 <h1>San Francisco's Next Wave of Bikeways</h1>
 
-<p>Feedback visualization of San Francisco's next wave of bikeways based on member input.
-
-<p>Further details and survey <a href="http://www.sfbike.org/main/survey-what-should-be-the-next-generation-of-bikeways-in-san-francisco/"> located here</a>.
+<p><a href="http://www.sfbike.org/main/survey-what-should-be-the-next-generation-of-bikeways-in-san-francisco/">Survey</a> results geographically visualized by District.
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script>
 
-var width = Math.max(500, window.innerWidth/3),
-	height = Math.max(500, window.innerHeight/2),
+var width = Math.max(600, window.innerWidth/2),
+	height = Math.max(600, window.innerHeight/2),
     active;
 
 var projection = d3.geo.mercator()
@@ -88,7 +160,8 @@ svg.append("rect")
     
 var g = svg.append("g");
 var SF = g.append("g");
-var network = g.append("g");
+var newBikelanes = g.append("g");
+var upgradedBikelanes = g.append("g");
 
 var stroke = d3.scale.log()
     .domain([1,1980,1990,2000,2005,2010,2015])
@@ -119,23 +192,42 @@ d3.json("Elect_Supervisor_Dists_Topo.json", function(error, topology) {
 
 });
 
-d3.json("SFMTABikewayNetworkTopo.json", function(error, topology) {
+d3.json("SF_BikeRoutes_Upgrade_Topo.json", function(error, topology) {
 	var bikelanes = topojson.feature(topology, topology.objects.bikelanes);
 
-	network.selectAll("path")
+	upgradedBikelanes.selectAll("path")
+			.data(bikelanes.features)
+		.enter().append("path")
+			.attr("d", path)
+//			.attr("class", "bikelanes")
+			.attr("class", function(d) { return "bikelanes UPGRADED" + d.properties.STREET + d.properties.ST_TYPE})
+			.style("stroke", 'deepskyblue')
+//			.style("stroke", function(d) { return stroke(d.properties.YEAR_INSTA) })
+
+//   network.append("path")
+//       .datum(bikelanes.features)
+//       .attr("class", "mesh")
+//       .attr("d", path);  
+});
+
+d3.json("SF_BikeRoutes_New_Topo.json", function(error, topology) {
+	var bikelanes = topojson.feature(topology, topology.objects.bikelanes);
+
+	newBikelanes.selectAll("path")
 			.data(bikelanes.features)
 		.enter().append("path")
 			.attr("d", path)
 			.attr("class", "bikelanes")
-			.style("stroke", function(d) { return stroke(d.properties.YEAR_INSTA) })
+			.attr("class", function(d) { return "bikelanes NEW" + d.properties.STREET + d.properties.ST_TYPE})
+			.style("stroke", 'orangered');
+//			.style("stroke", function(d) { return stroke(d.properties.YEAR_INSTA) })
 			
 //   network.append("path")
 //       .datum(bikelanes.features)
 //       .attr("class", "mesh")
-//       .attr("d", path);
-      
+//       .attr("d", path);  
 });
-	
+
 function click(d) {
   if (active === d) return reset();
   SF.selectAll(".active").classed("active", false);

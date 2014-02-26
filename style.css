@@ -10,7 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 1em auto 4em auto;
   position: relative;
-  width: 700px;
+  width: 80%;
 }
 
 header,
@@ -63,7 +63,7 @@ body > p, li > p {
 }
 
 body > p {
-  width: 500px;
+  width: 900px;
 }
 
 blockquote q {
